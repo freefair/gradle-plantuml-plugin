@@ -1,4 +1,4 @@
-package com.cosminpolifronie.gradle.plantuml
+package io.freefair.plantuml
 
 import net.sourceforge.plantuml.FileFormat
 import org.gradle.testkit.runner.BuildResult

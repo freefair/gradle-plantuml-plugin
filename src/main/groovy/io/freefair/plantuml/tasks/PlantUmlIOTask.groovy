@@ -1,6 +1,7 @@
-package com.cosminpolifronie.gradle.plantuml.tasks
+package io.freefair.plantuml.tasks
 
-import com.cosminpolifronie.gradle.plantuml.PlantUmlPreparedRender
+
+import io.freefair.plantuml.PlantUmlPreparedRender
 import org.gradle.api.DefaultTask
 import org.gradle.api.tasks.TaskAction
 

@@ -1,4 +1,4 @@
-package com.cosminpolifronie.gradle.plantuml
+package io.freefair.plantuml
 
 class PlantUmlPluginExtension {
     List<PlantUmlReceivedRender> receivedRenders = []

@@ -5,8 +5,8 @@ plugins {
     id 'maven-publish'
 }
 
-group = 'com.cosminpolifronie.gradle'
-version = '1.6.0'
+group = 'io.freefair'
+version = '1.0.0'
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
@@ -15,29 +15,29 @@ repositories {
 }
 
 dependencies {
-    compile 'net.sourceforge.plantuml:plantuml:1.2019.7'
+    implementation 'net.sourceforge.plantuml:plantuml:1.2022.5'
 
-    testCompile 'org.junit.jupiter:junit-jupiter-api:5.4.2'
-    testCompile 'org.junit-pioneer:junit-pioneer:0.3.0'
-    testRuntime 'org.junit.jupiter:junit-jupiter-engine:5.4.2'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
+    testImplementation 'org.junit-pioneer:junit-pioneer:1.7.1'
+    testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
 }
 
 gradlePlugin {
     plugins {
         plantUmlPlugin {
-            id = 'com.cosminpolifronie.gradle.plantuml'
+            id = 'io.freefair.plantuml'
             displayName = 'Gradle PlantUML Plugin'
             description = 'A simple plugin to render PlantUML files. ' +
                     'Takes a set of diagram files together with desired output files / formats ' +
                     'and renders them with PlantUML (http://plantuml.com/).'
-            implementationClass = 'com.cosminpolifronie.gradle.plantuml.PlantUmlPlugin'
+            implementationClass = 'io.freefair.plantuml.PlantUmlPlugin'
         }
     }
 }
 
 pluginBundle {
-    website = 'https://github.com/cosminpolifronie/gradle-plantuml-plugin'
-    vcsUrl = 'https://github.com/cosminpolifronie/gradle-plantuml-plugin'
+    website = 'https://github.com/freefair/gradle-plantuml-plugin'
+    vcsUrl = 'https://github.com/freefair/gradle-plantuml-plugin'
     tags = ['plantuml']
 }
 

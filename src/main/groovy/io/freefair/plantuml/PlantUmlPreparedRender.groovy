@@ -1,4 +1,4 @@
-package com.cosminpolifronie.gradle.plantuml
+package io.freefair.plantuml
 
 import groovy.transform.Canonical
 import net.sourceforge.plantuml.FileFormat

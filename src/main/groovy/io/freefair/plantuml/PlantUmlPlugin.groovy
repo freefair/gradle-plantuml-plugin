@@ -1,8 +1,8 @@
-package com.cosminpolifronie.gradle.plantuml
+package io.freefair.plantuml
 
-import com.cosminpolifronie.gradle.plantuml.tasks.PlantUmlIOTask
-import com.cosminpolifronie.gradle.plantuml.tasks.PlantUmlOutputForInputTask
-import com.cosminpolifronie.gradle.plantuml.tasks.PlantUmlTask
+import io.freefair.plantuml.tasks.PlantUmlIOTask
+import io.freefair.plantuml.tasks.PlantUmlOutputForInputTask
+import io.freefair.plantuml.tasks.PlantUmlTask
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 
