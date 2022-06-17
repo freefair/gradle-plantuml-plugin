@@ -5,16 +5,13 @@ import org.gradle.testkit.runner.BuildResult
 import org.gradle.testkit.runner.GradleRunner
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
-import org.junit.jupiter.api.extension.ExtendWith
-import org.junitpioneer.jupiter.TempDirectory
-import org.junitpioneer.jupiter.TempDirectory.TempDir
+import org.junit.jupiter.api.io.TempDir
 
 import java.nio.file.Path
 
 import static org.gradle.testkit.runner.TaskOutcome.SUCCESS
 import static org.gradle.testkit.runner.TaskOutcome.UP_TO_DATE
 
-@ExtendWith(TempDirectory)
 class PlantUmlPluginTest {
     File rootDir
     File buildFile
@@ -41,7 +38,7 @@ class PlantUmlPluginTest {
 
         buildFile << """
             plugins {
-                id 'com.cosminpolifronie.gradle.plantuml'
+                id 'io.freefair.plantuml'
             }
         """
 
